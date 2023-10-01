@@ -1,36 +1,93 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
+    <meta name="description" content="Прицепы Титан, Атлант">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon/icon-logo.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/apple-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#00FF76">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#00FF76">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Manrope-Medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Manrope-Bold.woff2" as="font" crossorigin="anonymous">
+    <title>Прицепы</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
+
   <body>
     <div class="wrapper">
       <header>
-        <div class="container"></div>
+        <div class="wrapper__overlay" data-close-menu></div>
+        <header class="page-header" data-header-element>
+          <div class="page-header__container" data-header>
+            <div class="container">
+              <div class="page-header__wrapper">
+                <button class="page-header__burger" type="button" aria-label="Переключатель отображения меню."
+                  aria-pressed="false" data-burger>
+                  <!-- <svg class="page-header__burger-icon page-header__burger-icon--open" width="26" height="26"
+                    aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-menu"></use>
+                  </svg>
+                  <svg class="page-header__burger-icon page-header__burger-icon--close" width="22" height="22"
+                    aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-close"></use>
+                  </svg> -->
+                </button>
+                <div class="page-header__logo logo logo--header">
+                  <h1>Легковые прицепы</h1>
+                  <a class="logo__link logo__link--header" href="index.html" aria-label="Переход на главную страницу">
+                    <svg width="205" height="62">
+                      <use href="img/sprite.svg#icon-logo"></use>
+                    </svg>
+                  </a>
+                </div>
+                <nav class="page-header__nav nav nav--header" data-nav-header>
+                  <ul class="page-header__list nav__list nav__list--header">
+                    <li class="page-header__item nav__item">
+                      <a class="page-header__link nav__link" href="#tours" data-link-menu>Туры</a>
+                    </li>
+                    <li class="page-header__item nav__item">
+                      <a class="page-header__link nav__link" href="#education" data-link-menu>Обучение</a>
+                    </li>
+                    <li class="page-header__item nav__item">
+                      <a class="page-header__link nav__link" href="#about" data-link-menu>О нас</a>
+                    </li>
+                    <li class="page-header__item nav__item">
+                      <a class="page-header__link nav__link" href="#reviews" data-link-menu>Отзывы</a>
+                    </li>
+                    <li class="page-header__item nav__item">
+                      <a class="page-header__link nav__link" href="#gallery" data-link-menu>Фотографии</a>
+                    </li>
+                    <li class="page-header__item nav__item">
+                      <a class="page-header__link nav__link" href="#contacts" data-link-menu>Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="page-header__phone">
+                  <a class="page-header__link page-header__link--phone" href="tel:88007253232">8 800 725 32 32</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
       </header>
       <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-          </div>
-        </section>
+
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="page-footer">
+
       </footer>
     </div>
 
     <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
+    <!-- <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
@@ -56,9 +113,10 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
+
 </html>
