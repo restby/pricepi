@@ -1,0 +1,127 @@
+// .slide {}
+
+.slide__container {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-default-white;
+  border-radius: 16px;
+  padding: 30px 15px;
+}
+
+.slide__img-container {
+  padding: 20px;
+  margin-bottom: 18px;
+
+  @include vp-1199 {
+    padding: 10px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+
+  & img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.slide__info {
+  width: 74%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-default-blue;
+  border-radius: 14px;
+  padding: 5px 10px;
+  margin-bottom: 22px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  color: $text-light;
+
+  @include vp-1199 {
+    font-size: 16px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+  }
+}
+
+.slide__info-keys {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+
+  @include vp-1199 {
+    font-size: inherit;
+  }
+
+  @include vp-767 {
+    font-size: inherit;
+  }
+}
+
+.slide__info-value {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+
+  @include vp-1199 {
+    font-size: inherit;
+  }
+
+  @include vp-767 {
+    font-size: inherit;
+  }
+}
+
+.slide__content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.slide__title {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: normal;
+  color: $text-dark;
+
+  @include vp-1199 {
+    font-size: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+  }
+}
+
+.slide__price {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $text-dark;
+  text-decoration: underline;
+  position: relative;
+
+
+  // @include vp-1199 {
+  // }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  & svg {
+    margin-left: 4px;
+  }
+}
