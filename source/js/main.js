@@ -2,6 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initUniaxialSlider} from './modules/initUniaxialSlider';
+import {initBiaxialSlider} from './modules/initBiaxialSlider';
+import {initBoatSlider} from './modules/initBoatSlider';
 
 // ---------------------------------
 
@@ -23,6 +25,8 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initUniaxialSlider();
+    initBiaxialSlider();
+    initBoatSlider();
   });
 });
 

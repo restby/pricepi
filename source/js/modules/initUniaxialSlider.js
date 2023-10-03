@@ -9,10 +9,9 @@ const initUniaxialSlider = () => {
     simulateTouch: false,
     speed: 500,
     navigation: {
-      nextEl: '.slider-btns__arrow--next',
-      prevEl: '.slider-btns__arrow--prev',
+      nextEl: '[data-uniaxial__arrow--next]',
+      prevEl: '[data-uniaxial__arrow--prev]',
     },
-    initialSlide: 0,
     breakpoints: {
       320: {
         slidesPerView: 1,
