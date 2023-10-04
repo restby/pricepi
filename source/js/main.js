@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {initUniaxialSlider} from './modules/initUniaxialSlider';
 import {initBiaxialSlider} from './modules/initBiaxialSlider';
 import {initBoatSlider} from './modules/initBoatSlider';
+import {initTabs} from './modules/tabs/init-tabs';
 
 // ---------------------------------
 
@@ -13,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-
+  initTabs();
   // Modules
   // ---------------------------------
 

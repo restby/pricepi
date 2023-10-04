@@ -5,6 +5,12 @@
 // Swiper 8.4.7
 @import "vendor/swiper";
 
+//Modules
+// ---------------------------------
+@import "modules/data-tabs";
+@import "modules/tabs";
+
+
 // Global
 // ---------------------------------
 
@@ -17,7 +23,10 @@
 
 // Blocks
 // ---------------------------------
-
+// @import "blocks/modal";
+// @import "blocks/custom-input";
+// @import "blocks/custom-toggle";
+// @import "blocks/custom-select";
 @import "blocks/btn";
 @import "blocks/section-title";
 @import "blocks/section-descr.scss";
@@ -35,16 +44,14 @@
 @import "blocks/map";
 @import "blocks/page-footer";
 @import "blocks/social";
+@import "blocks/catalog";
 
 // Pages
+//---------------------------------
 @import "blocks/uniaxial-catalog";
 @import "blocks/biaxial-catalog";
 @import "blocks/boat-catalog";
 
-// @import "blocks/modal";
-// @import "blocks/custom-input";
-// @import "blocks/custom-toggle";
-// @import "blocks/custom-select";
 
 // ---------------------------------
 
