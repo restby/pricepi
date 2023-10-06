@@ -1647,8 +1647,9 @@ button,
 }
 .modal__content {
   position: relative;
-  width: 600px;
+  width: 800px;
   padding: 40px;
+  padding-top: 30px;
   background-color: #ffffff;
 }
 @media (max-width: 767px) {
@@ -1696,6 +1697,89 @@ button,
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.modal__tabs-controls {
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+}
+
+.modal__tabs-control {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 10px 10px;
+  border-radius: 14px;
+  border: 1px solid #5b5b5b;
+  background-color: #01aa52;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #f6f5f5;
+  text-transform: uppercase;
+  -webkit-transition: border-color 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+  transition: border-color 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .modal__tabs-control:hover:not(.focus-visible) {
+    outline: none;
+    color: #01aa52;
+    background-color: #ffffff;
+    border: 1px solid #01aa52;
+  }
+  .modal__tabs-control:hover:not(.focus-visible):active {
+    opacity: 0.7;
+  }
+}
+.modal__tabs-control.focus-visible:focus {
+  outline: none;
+  color: #01aa52;
+  background-color: #ffffff;
+  border: 1px solid #01aa52;
+}
+.modal__tabs-control.focus-visible:focus:active {
+  opacity: 0.7;
+}
+.modal__tabs-control--disabled {
+  color: #5b5b5b;
+  pointer-events: none;
+  background: rgba(2, 102, 193, 0.1);
+}
+.modal__tabs-control.is-active {
+  color: #01aa52;
+  background-color: #ffffff;
+  border: 1px solid #01aa52;
+}
+
+.modal__img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal__info table {
+  width: 100%;
+}
+.modal__info caption {
+  margin-bottom: 20px;
+}
+.modal__info svg {
+  margin-left: 3px;
 }
 
 .btn {
