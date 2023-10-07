@@ -1813,6 +1813,13 @@ button,
   padding: 5px;
 }
 
+.modal__descr {
+  margin-bottom: 40px;
+}
+.modal__descr p {
+  margin: 0;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
