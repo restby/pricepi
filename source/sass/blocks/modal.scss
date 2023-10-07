@@ -187,15 +187,45 @@
 }
 
 .modal__info {
-  & table {
+  & table.price-table {
     width: 100%;
+    border: 1px solid $text-dark;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+
+    & th {
+      border: 1px solid $text-dark;
+      padding: 12px;
+    }
+
+    & td {
+      border: 1px solid $text-dark;
+      padding: 8px;
+      text-align: center;
+    }
+
+    & caption {
+      margin-bottom: 20px;
+    }
+
+    & svg {
+      margin-left: 3px;
+    }
+
+    & span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
-  & caption {
-    margin-bottom: 20px;
-  }
+  & table.info {
+    width: 100%;
+    border-collapse: collapse;
 
-  & svg {
-    margin-left: 3px;
+    & td {
+      border: 1px solid $text-dark;
+      padding: 5px;
+    }
   }
 }
