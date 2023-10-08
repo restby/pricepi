@@ -1655,7 +1655,7 @@ button,
 @media (max-width: 767px) {
   .modal__content {
     width: 100%;
-    padding: 20px;
+    padding: 15px;
   }
 }
 .modal__close-btn {
@@ -1711,6 +1711,19 @@ button,
      -moz-column-gap: 16px;
           column-gap: 16px;
 }
+@media (max-width: 767px) {
+  .modal__tabs-controls {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    row-gap: 15px;
+    margin-top: 40px;
+  }
+}
 
 .modal__tabs-control {
   -ms-flex-item-align: center;
@@ -1728,6 +1741,11 @@ button,
   -webkit-transition: border-color 0.5s ease, background-color 0.5s ease, color 0.5s ease;
   transition: border-color 0.5s ease, background-color 0.5s ease, color 0.5s ease;
   cursor: pointer;
+}
+@media (max-width: 767px) {
+  .modal__tabs-control {
+    width: 60%;
+  }
 }
 @media (hover: hover) {
   .modal__tabs-control:hover:not(.focus-visible) {
@@ -1787,11 +1805,38 @@ button,
   padding: 8px;
   text-align: center;
 }
+@media (max-width: 1199px) {
+  .modal__info table.price-table td {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .modal__info table.price-table td {
+    font-size: 14px;
+  }
+}
 .modal__info table.price-table caption {
   margin-bottom: 20px;
 }
+@media (max-width: 1199px) {
+  .modal__info table.price-table caption {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .modal__info table.price-table caption {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+}
 .modal__info table.price-table svg {
   margin-left: 3px;
+}
+@media (max-width: 767px) {
+  .modal__info table.price-table svg {
+    width: 8px;
+    height: 12px;
+  }
 }
 .modal__info table.price-table span {
   display: -webkit-box;
@@ -1811,6 +1856,16 @@ button,
 .modal__info table.info td {
   border: 1px solid #5b5b5b;
   padding: 5px;
+}
+@media (max-width: 1199px) {
+  .modal__info table.info td {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .modal__info table.info td {
+    font-size: 13px;
+  }
 }
 
 .modal__descr {
@@ -2578,8 +2633,31 @@ button,
 }
 @media (max-width: 767px) {
   .uniaxial-catalog__tabs-control {
-    width: 60%;
-    padding: 8px 14px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .biaxial-catalog__tabs-controls {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 12px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .biaxial-catalog__tabs-control {
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .biaxial-catalog__tabs-control {
     font-size: 12px;
     line-height: 12px;
   }

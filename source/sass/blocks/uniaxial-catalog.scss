@@ -1,4 +1,4 @@
-.uniaxial-catalog {}
+// .uniaxial-catalog {}
 
 .uniaxial-catalog__tabs-controls {
   @include vp-767 {
@@ -16,8 +16,6 @@
   }
 
   @include vp-767 {
-    width: 60%;
-    padding: 8px 14px;
     font-size: 12px;
     line-height: 12px;
   }
