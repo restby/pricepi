@@ -81,10 +81,10 @@
 
 .catalog__tabs-content {}
 
-.catalog__tabs-element {
+.catalog__tabs-element,
+.catalog__element {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  // grid-template-rows: repeat(4, auto);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
 

@@ -1901,6 +1901,7 @@ button,
   background-color: #ffffff;
   border-radius: 16px;
   padding: 30px 15px;
+  height: 100%;
 }
 
 .slide__img-container {
@@ -2525,7 +2526,8 @@ button,
   border: 1px solid #01aa52;
 }
 
-.catalog__tabs-element {
+.catalog__tabs-element,
+.catalog__element {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -2534,7 +2536,8 @@ button,
   grid-row-gap: 30px;
 }
 @media (max-width: 1199px) {
-  .catalog__tabs-element {
+  .catalog__tabs-element,
+.catalog__element {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
@@ -2542,7 +2545,8 @@ button,
   }
 }
 @media (max-width: 767px) {
-  .catalog__tabs-element {
+  .catalog__tabs-element,
+.catalog__element {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-column-gap: 0;
