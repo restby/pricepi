@@ -1,15 +1,19 @@
+.page-header {
+  margin-bottom: 40px;
+}
+
 .page-header__container {
+  padding-top: 22px;
   position: relative;
   z-index: 30;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  padding-top: 41px;
 
   @include vp-1199 {
     padding-top: 30px;
   }
 
   @include vp-767 {
-    padding-top: 8px;
+    padding-top: 10px;
   }
 
   &.is-open {
@@ -17,11 +21,11 @@
   }
 
   &.is-open .page-header__logo svg {
-    color: $text-dark;
+    color: $text-action;
   }
 
   &.is-open .page-header__link--phone {
-    color: $text-dark;
+    color: $text-action;
   }
 }
 
@@ -44,6 +48,7 @@
   }
 
   .is-open {
+
     .page-header__burger-icon--open {
       opacity: 0;
       pointer-events: none;

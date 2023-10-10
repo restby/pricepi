@@ -1515,6 +1515,21 @@ button,
           flex-grow: 1;
 }
 
+@media (max-width: 1199px) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 21;
+    background-color: rgba(91, 91, 91, 0.7);
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+
 .rouble {
   font-family: "Rouble", "Arial", sans-serif;
   /* stylelint-disable */
@@ -1970,14 +1985,18 @@ button,
   }
 }
 
+.page-header {
+  margin-bottom: 40px;
+}
+
 .page-header__container {
+  padding-top: 22px;
   position: relative;
   z-index: 30;
   -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
   transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
   transition: transform 0.3s ease, background-color 0.3s ease;
   transition: transform 0.3s ease, background-color 0.3s ease, -webkit-transform 0.3s ease;
-  padding-top: 41px;
 }
 @media (max-width: 1199px) {
   .page-header__container {
@@ -1986,17 +2005,17 @@ button,
 }
 @media (max-width: 767px) {
   .page-header__container {
-    padding-top: 8px;
+    padding-top: 10px;
   }
 }
 .page-header__container.is-open {
   background-color: #ffffff;
 }
 .page-header__container.is-open .page-header__logo svg {
-  color: #5b5b5b;
+  color: #01aa52;
 }
 .page-header__container.is-open .page-header__link--phone {
-  color: #5b5b5b;
+  color: #01aa52;
 }
 
 .page-header__burger {
@@ -2173,6 +2192,59 @@ button,
   color: #01aa52;
 }
 
+@media (max-width: 1199px) {
+  .logo--header {
+    z-index: 22;
+  }
+}
+@media (max-width: 767px) {
+  .logo--header {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    margin-left: auto;
+  }
+}
+
+.logo__link {
+  display: block;
+}
+@media (max-width: 767px) {
+  .page-header .logo__link {
+    margin-bottom: 14px;
+  }
+}
+@media (hover: hover) {
+  .logo__link:hover:not(.focus-visible) {
+    opacity: 0.7;
+    outline: none;
+  }
+  .logo__link:hover:not(.focus-visible):active {
+    opacity: 0.3;
+  }
+}
+.logo__link.focus-visible:focus {
+  opacity: 0.7;
+  outline: none;
+}
+.logo__link.focus-visible:focus:active {
+  opacity: 0.3;
+}
+.logo__link--header svg {
+  color: #5b5b5b;
+  width: 143px;
+  height: 43px;
+}
+@media (max-width: 1199px) {
+  .logo__link--header svg {
+    color: #5b5b5b;
+  }
+}
+.logo__link--footer svg {
+  color: #5b5b5b;
+  width: 143px;
+  height: 43px;
+}
 .nav--header {
   margin-left: auto;
   margin-right: auto;
@@ -2341,6 +2413,62 @@ button,
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.56px;
+  }
+}
+
+.promo {
+  margin-bottom: 50px;
+  padding-top: 400px;
+  min-height: 636px;
+  position: relative;
+}
+@media (max-width: 1199px) {
+  .promo {
+    margin-bottom: 46px;
+    min-height: 386px;
+    padding-top: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .promo {
+    margin-bottom: 40px;
+  }
+}
+.promo > picture img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.promo__container {
+  position: relative;
+  z-index: 2;
+}
+
+.promo__text {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #f6f5f5;
+  max-width: 64%;
+}
+@media (max-width: 1199px) {
+  .promo__text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .promo__text {
+    font-size: 14px;
+    max-width: 90%;
   }
 }
 
@@ -2889,6 +3017,37 @@ button,
   background: rgba(2, 102, 193, 0.1);
 }
 
+.contacts {
+  margin-bottom: 40px;
+}
+
+.contacts__tilte {
+  margin-bottom: 30px;
+}
+
+.page-footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+@media (max-width: 1199px) {
+  .page-footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    row-gap: 30px;
+  }
+}
 .catalog__title {
   margin-bottom: 30px;
 }
