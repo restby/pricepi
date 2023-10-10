@@ -27,23 +27,22 @@
   }
 }
 
-
-
-.promo__container {
+.promo__text {
   position: relative;
   z-index: 2;
-}
-
-.promo__text {
   margin: 0;
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
   color: $text-light;
-  max-width: 64%;
+  max-width: 58%;
 
   @include vp-1199 {
     font-size: 16px;
+
+    .scroll-lock & {
+      position: static;
+    }
   }
 
   @include vp-767 {

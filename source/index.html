@@ -23,7 +23,6 @@
 
   <body>
     <div class="wrapper webp">
-      <div class="overlay" data-overlay data-close-menu></div>
       <header class="page-header" data-header-element>
         <div class="page-header__container" data-header>
           <div class="container">
@@ -41,7 +40,7 @@
               </button>
               <div class="page-header__logo logo logo--header">
                 <h1 class="visually-hidden">Легковые автоприцепы</h1>
-                <a class="logo__link logo__link--header" href="index.html" aria-label="Переход на главную страницу">
+                <a class="logo__link logo__link--header" aria-label="Переход на главную страницу">
                   <svg width="113" height="43">
                     <use href="img/sprite.svg#icon-logo-dark"></use>
                   </svg>
@@ -68,7 +67,8 @@
                 </ul>
               </nav>
               <div class="page-header__phone">
-                <a class="page-header__link page-header__link--phone" href="tel:375295944261">+375(29)594-42-61</a>
+                <a class="page-header__link page-header__link--phone" href="tel:375295944261">+375 (29) 594-42-61</a>
+                <a class="page-header__link page-header__link--phone" href="tel:+79206691969">+7 (920) 669-19-69</a>
               </div>
             </div>
           </div>
@@ -85,8 +85,7 @@
           <div class="container promo__container">
             <p class="promo__text">
               Мы&nbsp;занимаемся реализацией качественных легковых прицепов.<br>
-              Наша продукция,
-              отличается высоким качеством, легкой сборкой, длительной и&nbsp;удобной эксплуатацией
+              Наша продукция, отличается высоким качеством, легкой сборкой, длительной и&nbsp;удобной эксплуатацией
               и&nbsp;главное&nbsp;&mdash; доступной ценой.
             </p>
           </div>
@@ -427,23 +426,28 @@
           <div class="container contacts__container">
             <h2 class="contacts__tilte section-title">Наши контакты</h2>
             <div class="contacts__info">
-              <div class="contacts__row">
-                <div class="contacts__col"><span>Телефон</span></div>
-                <div class="contacts__col"><a href="tel:+375295944261">+375(29)594 42 61</a></div>
+              <div class="contacts__col">
+                <a href="tel:+375295944261"><svg width="48" height="48">
+                    <use href="img/sprite.svg#icon-phone"></use>
+                  </svg>+375(29)594 42 61</a>
               </div>
-              <div class="contacts__row">
-                <div class="contacts__col"><a href="viber://chat?number=%2B375295944261">
-                    <img src="https://it-land.by/wp-content/uploads/2018/10/Viber-logo.png">
-                  </a></div>
+              <div class="contacts__col">
+                <a href="viber://chat?number=%2B375295944261"><svg width="52" height="52">
+                    <use href="img/sprite.svg#icon-viber"></use>
+                  </svg>
+                </a>
               </div>
-              <div class="contacts__row">
-                <div class="contacts__col"><span>Whatsap</span></div>
-                <div class="contacts__col"><a href="https://api.whatsapp.com/send/?phone=375295944261">+375(29)594 42
-                    61</a></div>
+              <div class="contacts__col">
+                <a href="https://api.whatsapp.com/send/?phone=375295944261"><svg width="52" height="52">
+                    <use href="img/sprite.svg#icon-whatsapp"></use>
+                  </svg>
+                </a></a>
               </div>
-              <div class="contacts__row">
-                <div class="contacts__col"><span>Почта</span></div>
-                <div class="contacts__col"><a href="mailto:prichapi@yandex.ru">prichapi@yandex.ru</a></div>
+              <div class="contacts__col">
+                <a href="mailto:prichapi@yandex.ru">
+                  <svg width="52" height="52">
+                    <use href="img/sprite.svg#icon-mail"></use>
+                  </svg>prichapi@yandex.ru</a>
               </div>
             </div>
             <!-- <div class="contacts__map map">
@@ -481,11 +485,13 @@
               </ul>
             </nav>
             <div class="page-footer__phone">
-              <a class="page-footer__link page-footer__link--phone" href="tel:88007253232">8 800 725 32 32</a>
+              <a class="page-footer__link page-footer__link--phone" href="tel:375295944261">+375 (29) 594-42-61</a>
+              <a class="page-footer__link page-footer__link--phone" href="tel:79206691969">+7 (920) 669-19-69</a>
             </div>
           </div>
         </div>
       </footer>
+      <div class="overlay" data-overlay></div>
     </div>
 
     <script src="js/vendor.min.js"></script>

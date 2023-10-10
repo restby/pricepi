@@ -21,11 +21,11 @@
   }
 
   &.is-open .page-header__logo svg {
-    color: $text-action;
+    color: $text-dark;
   }
 
   &.is-open .page-header__link--phone {
-    color: $text-action;
+    color: $text-dark;
   }
 }
 
@@ -116,8 +116,9 @@
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
+  row-gap: 8px;
   margin-left: 10px;
-  max-width: 145px;
+  max-width: 195px;
 
   @include vp-1199 {
     margin-left: 0;
@@ -125,8 +126,8 @@
   }
 
   @include vp-767 {
+    row-gap: 6px;
     width: 100%;
-    display: flex;
     max-width: none;
   }
 }
@@ -138,6 +139,8 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
+  border: 1px solid $color-transparent;
+  transition: color $trans-default, border-color $trans-default;
 
   @include vp-1199 {
     font-size: 16px;
@@ -153,10 +156,12 @@
 
   @include hover-focus {
     color: $text-action;
+    border-bottom: 1px solid $color-default-green;
     outline: none;
 
     @include active {
-      color: $color-default-green;
+      color: $text-action;
+      border-color: $color-transparent;
     }
   }
 }

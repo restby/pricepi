@@ -8,7 +8,7 @@ const initBoatSlider = () => {
   const boatSlider = new Swiper(boatSliderElement, {
     simulateTouch: false,
     speed: 500,
-    autoHeight: true,
+    // autoHeight: true,
     navigation: {
       nextEl: '[data-boat__arrow--next]',
       prevEl: '[data-boat__arrow--prev]',

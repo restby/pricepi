@@ -1,11 +1,6 @@
 .nav {
   &--header {
-    margin-left: auto;
-    margin-right: auto;
-
     @include vp-1199 {
-      padding-left: 45px;
-      padding-right: 45px;
       background-color: $color-default-white;
       position: fixed;
       z-index: 20;
@@ -70,6 +65,7 @@
     line-height: 16px;
     border: 1px solid $color-transparent;
     user-select: none;
+    transition: color $trans-default, border-color $trans-default;
 
     @include vp-1199 {
       font-size: 14px;
@@ -107,14 +103,14 @@
     }
   }
 
-  & a {
+  & a[href] {
     color: $text-dark;
 
     @include vp-1200 {
       @include hover {
-        color: $text-dark;
+        color: $text-action;
         outline: none;
-        border-bottom: 1px solid $color-default-white;
+        border-bottom: 1px solid $color-default-green;
 
         @include active {
           border-color: $color-transparent;
@@ -122,9 +118,9 @@
       }
 
       @include focus {
-        color: $text-dark;
+        color: $text-action;
         outline: none;
-        border: 1px solid $color-default-white;
+        border: 1px solid $color-default-green;
       }
     }
 
@@ -137,9 +133,9 @@
       text-transform: uppercase;
 
       @include hover {
-        color: $text-dark;
+        color: $text-action;
         outline: none;
-        border-bottom: 1px solid $text-dark;
+        border-bottom: 1px solid $text-action;
 
         @include active {
           color: $text-dark;
@@ -148,7 +144,63 @@
 
       @include focus {
         color: $text-dark;
-        border: 1px solid $text-dark;
+        border: 1px solid $text-action;
+      }
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.56px;
+    }
+  }
+}
+
+.nav__list--footer {
+  column-gap: 21px;
+  row-gap: 22px;
+
+  @include vp-767 {
+    row-gap: 12px;
+  }
+
+  & a {
+    color: $text-dark;
+
+    @include vp-1200 {
+      @include hover {
+        color: $text-action;
+        outline: none;
+        border-bottom: 1px solid $color-default-green;
+
+        @include active {
+          border-color: $color-transparent;
+        }
+      }
+
+      @include focus {
+        color: $text-action;
+        outline: none;
+        border: 1px solid $color-default-green;
+      }
+    }
+
+    @include vp-1199 {
+      letter-spacing: 0.64px;
+
+      @include hover {
+        color: $text-action;
+        outline: none;
+        border-bottom: 1px solid $text-action;
+
+        @include active {
+          color: $text-dark;
+        }
+      }
+
+      @include focus {
+        color: $text-dark;
+        border: 1px solid $text-action;
       }
     }
 

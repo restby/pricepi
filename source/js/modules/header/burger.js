@@ -22,7 +22,7 @@ export class Burger {
     }
 
     this._burger.addEventListener('click', this._onBurgerClick);
-    this.__overlay.addEventListener('click', () =>{
+    this.__overlay.addEventListener('click', () => {
       this._closeMenu();
     });
   }
@@ -35,7 +35,6 @@ export class Burger {
     this._navHeader.style.top = `${this._header.offsetHeight}px`;
     this._scrollLock.disableScrolling();
     document.addEventListener('keydown', this._onDocumentKeydown);
-    document.querySelector('[data-close-menu]').classList.toggle('wrapper__overlay--hide');
     document.addEventListener('click', this._onDocumentClick);
     this._focusLock.lock('[data-header]');
     if (window.ls) {
@@ -52,7 +51,6 @@ export class Burger {
     this._focusLock.unlock('[data-header]');
     document.removeEventListener('keydown', this._onDocumentKeydown);
     document.removeEventListener('click', this._onDocumentClick);
-    document.querySelector('[data-close-menu]').classList.toggle('wrapper__overlay--hide');
     if (window.ls) {
       window.ls.start();
     }
