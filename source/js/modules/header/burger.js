@@ -31,7 +31,8 @@ export class Burger {
     this._isMenuOpen = true;
     this._header.classList.add('is-open');
     this.__overlay.style.opacity = '1';
-    this.__overlay.style.zIndex = '1';
+    this.__overlay.classList.add('overlay--is-open');
+    // this.__overlay.style.zIndex = '1';
     this._navHeader.style.top = `${this._header.offsetHeight}px`;
     this._scrollLock.disableScrolling();
     document.addEventListener('keydown', this._onDocumentKeydown);
@@ -46,7 +47,8 @@ export class Burger {
     this._isMenuOpen = false;
     this._header.classList.remove('is-open');
     this.__overlay.style.opacity = '0';
-    this.__overlay.style.zIndex = '-1';
+    this.__overlay.classList.remove('overlay--is-open');
+    // this.__overlay.style.zIndex = '-1';
     this._scrollLock.enableScrolling();
     this._focusLock.unlock('[data-header]');
     document.removeEventListener('keydown', this._onDocumentKeydown);
