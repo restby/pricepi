@@ -1415,7 +1415,7 @@ button.swiper-pagination-bullet {
   font-weight: 400;
   font-family: "Manrope";
   font-display: swap;
-  src: url("../fonts/Manrope-Regular.woff2") format("woff2"), url("../fonts/Manrope-Regular.woff") format("woff");
+  src: url("../../fonts/Manrope-Regular.woff2") format("woff2"), url("../../fonts/Manrope-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -1423,7 +1423,7 @@ button.swiper-pagination-bullet {
   font-weight: 500;
   font-family: "Manrope";
   font-display: swap;
-  src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff");
+  src: url("../../fonts/Manrope-Medium.woff2") format("woff2"), url("../../fonts/Manrope-Medium.woff") format("woff");
 }
 
 @font-face {
@@ -1431,7 +1431,7 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   font-family: "Manrope";
   font-display: swap;
-  src: url("../fonts/Manrope-Bold.woff2") format("woff2"), url("../fonts/Manrope-Bold.woff") format("woff");
+  src: url("../../fonts/Manrope-Bold.woff2") format("woff2"), url("../../fonts/Manrope-Bold.woff") format("woff");
 }
 
 /* stylelint-disable */
@@ -1848,7 +1848,7 @@ button,
   width: 100%;
   border: 1px solid #5b5b5b;
   border-collapse: collapse;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .modal__info table.price-table th {
@@ -1901,6 +1901,13 @@ button,
 .modal__descr p {
   margin: 0;
   margin-bottom: 40px;
+  line-height: 120%;
+}
+
+.modal__price-descr p {
+  margin: 0;
+  margin-bottom: 40px;
+  line-height: 120%;
 }
 
 .btn {
@@ -2222,6 +2229,7 @@ button,
   position: relative;
   z-index: 2;
   margin: 0;
+  margin-bottom: 30px;
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
@@ -2353,7 +2361,6 @@ button,
   font-weight: 400;
   line-height: 18px;
   color: #5b5b5b;
-  text-decoration: underline;
   position: relative;
 }
 
@@ -2787,13 +2794,13 @@ button,
   align-self: center;
   padding: 12px 20px;
   border-radius: 16px;
-  border: 1px solid #5b5b5b;
-  background-color: #01aa52;
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
-  color: #f6f5f5;
   text-transform: uppercase;
+  color: #01aa52;
+  background-color: #ffffff;
+  border: 1px solid #01aa52;
   -webkit-transition: border-color 0.5s ease, background-color 0.5s ease, color 0.5s ease;
   transition: border-color 0.5s ease, background-color 0.5s ease, color 0.5s ease;
   cursor: pointer;
@@ -2801,9 +2808,9 @@ button,
 
 .catalog__tabs-control.focus-visible:focus {
   outline: none;
-  color: #01aa52;
-  background-color: #ffffff;
-  border: 1px solid #01aa52;
+  border: 1px solid #5b5b5b;
+  background-color: #01aa52;
+  color: #f6f5f5;
 }
 
 .catalog__tabs-control.focus-visible:focus:active {
@@ -2817,9 +2824,9 @@ button,
 }
 
 .catalog__tabs-control.is-active {
-  color: #01aa52;
-  background-color: #ffffff;
-  border: 1px solid #01aa52;
+  border: 1px solid #5b5b5b;
+  background-color: #01aa52;
+  color: #f6f5f5;
 }
 
 .catalog__tabs-element,
@@ -2967,6 +2974,10 @@ button,
     font-size: 16px;
   }
 
+  .modal__price-descr p {
+    font-size: 16px;
+  }
+
   .section-title {
     font-size: 24px;
     line-height: 24px;
@@ -3073,6 +3084,12 @@ button,
     border: 1px solid #01aa52;
   }
 
+  .nav__list--footer {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
   .nav__list--footer a {
     letter-spacing: 0.64px;
   }
@@ -3155,7 +3172,6 @@ button,
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
-    width: 100%;
   }
 
   .page-footer__phone {
@@ -3316,6 +3332,10 @@ button,
   }
 
   .modal__descr p {
+    font-size: 14px;
+  }
+
+  .modal__price-descr p {
     font-size: 14px;
   }
 
@@ -3655,9 +3675,9 @@ button,
 
   .catalog__tabs-control:hover:not(.focus-visible) {
     outline: none;
-    color: #01aa52;
-    background-color: #ffffff;
-    border: 1px solid #01aa52;
+    border: 1px solid #5b5b5b;
+    background-color: #01aa52;
+    color: #f6f5f5;
   }
 
   .catalog__tabs-control:hover:not(.focus-visible):active {
