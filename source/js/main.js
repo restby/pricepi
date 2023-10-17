@@ -6,16 +6,16 @@ import {initBoatSlider} from './modules/initBoatSlider';
 import {initTabs} from './modules/tabs/init-tabs';
 import {Burger} from './modules/header/burger';
 
-import {boatItems} from './buisness/priceData';
+import {getPriceData} from './buisness/priceData';
 // import {Burger} from './modules/header/burger';
 // import {Burger} from './modules/header/burger';
 // import {Burger} from './modules/header/burger';
-console.log(boatItems);
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
 
+  getPriceData();
   // Utils
   // ---------------------------------
 
