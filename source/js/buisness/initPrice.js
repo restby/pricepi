@@ -18,23 +18,22 @@ const getPriceData = () => {
           target = target.parentNode;
         }
 
-        const myObject = {
-          key1: 'value1',
-          key2: 'value2',
-          key3: 'value3'
-        };
+        // console.log(itemDataValue);
+        if (items.hasOwnProperty(itemDataValue)) {
+          // Если ключ существует, получите вложенный объект
+          const innerObject = items[itemDataValue];
 
-        const targetValue = 'value2'; // Значение, с которым сравниваем ключи
+          // Теперь вы можете получить ключи и значения вложенного объекта и сохранить их в переменные
+          const keys = Object.keys(innerObject);
+          const values = Object.values(innerObject);
 
-        for (const key in myObject) {
-          if (myObject.hasOwnProperty(key)) { // Убедимся, что ключ принадлежит самому объекту, а не его прототипу
-            if (myObject[key] === targetValue) {
-              console.log(`Найден ключ с нужным значением: ${key}`);
-            }
-          }
+          // Далее вы можете использовать keys и values по вашему усмотрению
+          console.log('Keys:', keys);
+          console.log('Values:', values);
+        } else {
+          // Если ключ не найден, обработайте это по вашему усмотрению
+          console.log('Ключ не найден');
         }
-
-
       });
     });
   }
