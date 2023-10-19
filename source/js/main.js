@@ -7,6 +7,7 @@ import {initTabs} from './modules/tabs/init-tabs';
 import {Burger} from './modules/header/burger';
 
 import {getPriceData} from './buisness/initPrice';
+// import {initCardItem} from './buisness/initCardItem';
 // import {Burger} from './modules/header/burger';
 // import {Burger} from './modules/header/burger';
 // import {Burger} from './modules/header/burger';
@@ -16,6 +17,7 @@ import {getPriceData} from './buisness/initPrice';
 window.addEventListener('DOMContentLoaded', () => {
 
   getPriceData();
+  // initCardItem();
   // Utils
   // ---------------------------------
 

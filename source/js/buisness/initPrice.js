@@ -2,8 +2,8 @@ import {items} from './priceData';
 
 const getPriceData = () => {
 
-  const itemsData = Object.keys(items);
-  console.log(itemsData);
+  // const itemsData = Object.keys(items);
+  // console.log(itemsData);
 
   if (document.querySelector('[data-catalog__element]')) {
     const catalogElements = document.querySelectorAll('[data-catalog__element]');
