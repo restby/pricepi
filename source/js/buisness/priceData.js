@@ -211,4 +211,12 @@ export const items = {
     noWheelH600: 60200,
     wheel2R13H600: 66800,
   },
+  test: {
+    noWheel: 99100,
+    wheel2R13: 99200,
+    noWheelH300: 99300,
+    wheel2R13H300: 99400,
+    noWheelH600: 99500,
+    wheel2R13H600: 99600,
+  },
 };
