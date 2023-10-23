@@ -24,7 +24,6 @@ const getPriceData = () => {
 
 
         if (items.hasOwnProperty(itemDataValue)) {
-          console.log('has');
 
           // const itemDataObject = items[itemDataValue];
           // const keys = Object.keys(itemDataObject);
@@ -35,13 +34,90 @@ const getPriceData = () => {
           if (document.querySelector('[data-item-price="noWheel"]')) {
             const dataItemElement = document.querySelector('[data-item-price="noWheel"]');
             const dataItemPrice = dataItemElement.getAttribute('data-item-price');
-
             dataItemElement.textContent = items[itemDataValue][dataItemPrice];
-            // dataItemElement.textContent = '99999';
+          }
+
+          if (document.querySelector('[data-item-price="noWheelH300"]')) {
+            const dataItemElement = document.querySelector('[data-item-price="noWheelH300"]');
+            const dataItemPrice = dataItemElement.getAttribute('data-item-price');
+            dataItemElement.textContent = items[itemDataValue][dataItemPrice];
+          }
+
+          if (document.querySelector('[data-item-price="noWheelH600"]')) {
+            const dataItemElement = document.querySelector('[data-item-price="noWheelH600"]');
+            const dataItemPrice = dataItemElement.getAttribute('data-item-price');
+            dataItemElement.textContent = items[itemDataValue][dataItemPrice];
+          }
+
+          if (document.querySelector('[data-item-price="noWheelH1220"]')) {
+            const dataItemElement = document.querySelector('[data-item-price="noWheelH1220"]');
+            const dataItemPrice = dataItemElement.getAttribute('data-item-price');
+            dataItemElement.textContent = items[itemDataValue][dataItemPrice];
+          }
+
+          if (document.querySelector('[data-item-price="noWheelH1220C"]')) {
+            const dataItemElement = document.querySelector('[data-item-price="noWheelH1220C"]');
+            const dataItemPrice = dataItemElement.getAttribute('data-item-price');
+            dataItemElement.textContent = items[itemDataValue][dataItemPrice];
+          }
+
+          if (document.querySelector('[data-item-price="wheel2R13"]')) {
+            const dataItemElement = document.querySelector('[data-item-price="wheel2R13"]');
+            const dataItemPrice = dataItemElement.getAttribute('data-item-price');
+            dataItemElement.textContent = items[itemDataValue][dataItemPrice];
+          }
+
+          if (document.querySelector('[data-item-price="wheel2R13H300"]')) {
+            const dataItemElement = document.querySelector('[data-item-price="wheel2R13H300"]');
+            const dataItemPrice = dataItemElement.getAttribute('data-item-price');
+            dataItemElement.textContent = items[itemDataValue][dataItemPrice];
+          }
+
+          if (document.querySelector('[data-item-price="wheel2R13H600"]')) {
+            const dataItemElement = document.querySelector('[data-item-price="wheel2R13H600"]');
+            const dataItemPrice = dataItemElement.getAttribute('data-item-price');
+            dataItemElement.textContent = items[itemDataValue][dataItemPrice];
+          }
+
+          if (document.querySelector('[data-item-price="wheel2R13H1220"]')) {
+            const dataItemElement = document.querySelector('[data-item-price="wheel2R13H1220"]');
+            const dataItemPrice = dataItemElement.getAttribute('data-item-price');
+            dataItemElement.textContent = items[itemDataValue][dataItemPrice];
+          }
+
+          if (document.querySelector('[data-item-price="wheel2R13H1220C"]')) {
+            const dataItemElement = document.querySelector('[data-item-price="wheel2R13H1220C"]');
+            const dataItemPrice = dataItemElement.getAttribute('data-item-price');
+            dataItemElement.textContent = items[itemDataValue][dataItemPrice];
+          }
+
+          if (document.querySelector('[data-item-price="wheel4R13H1220"]')) {
+            const dataItemElement = document.querySelector('[data-item-price="wheel4R13H1220"]');
+            const dataItemPrice = dataItemElement.getAttribute('data-item-price');
+            dataItemElement.textContent = items[itemDataValue][dataItemPrice];
+          }
+
+          if (document.querySelector('[data-item-price="wheel4R13H1220C"]')) {
+            const dataItemElement = document.querySelector('[data-item-price="wheel4R13H1220C"]');
+            const dataItemPrice = dataItemElement.getAttribute('data-item-price');
+            dataItemElement.textContent = items[itemDataValue][dataItemPrice];
+          }
+
+          // ___________________
+
+          if (document.querySelector('[data-item-title]')) {
+            const itemDataTitle = target.getAttribute('data-item-title');
+
+            for (const key in items) {
+              if (items[key] && items[key].hasOwnProperty(itemDataTitle)) {
+                target.textContent = items[key][itemDataTitle];
+                return; // Выходим из цикла, так как значение найдено
+              }
+            }
           }
 
         } else {
-          console.log('Ключ не найден');
+          console.log('Товар не найден');
         }
 
 

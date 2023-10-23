@@ -27,3 +27,7 @@ data-clearance
 data-boat-dimensions
 
 data-dump-truck-function
+
+data-count-axes
+
+data-single-axle-load
