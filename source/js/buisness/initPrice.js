@@ -106,14 +106,9 @@ const getPriceData = () => {
           // ___________________
 
           if (document.querySelector('[data-item-title]')) {
-            const itemDataTitle = target.getAttribute('data-item-title');
+            const dataItemTitle = target.getAttribute('data-item-title');
+            dataItemTitle.textContent = items[itemDataValue].dataItemTitle;
 
-            for (const key in items) {
-              if (items[key] && items[key].hasOwnProperty(itemDataTitle)) {
-                target.textContent = items[key][itemDataTitle];
-                return; // Выходим из цикла, так как значение найдено
-              }
-            }
           }
 
         } else {
