@@ -15,6 +15,8 @@ const items = {
     clearance: '250, мм',
     boatDimensions: '5000, мм',
     dumpTruckFunction: 'Нет',
+    itemImgFileNameStart: '1L-00/1l-250-00',
+    itemImgFileNameWheel2R13: '1L-00/1l-250-01',
   },
   tl143: {
     itemTitle: 'Титан Лодочный-1 4.3',
@@ -32,6 +34,8 @@ const items = {
     clearance: '250, мм',
     boatDimensions: '4300, мм',
     dumpTruckFunction: 'Нет',
+    itemImgFileNameStart: '1L-00/1l-143-00',
+    itemImgFileNameWheel2R13: '1L-00/1l-143-01',
   },
   tl240: {
     itemTitle: 'Титан Лодочный-2 4.0 (Гидроцикл)',
@@ -49,6 +53,8 @@ const items = {
     clearance: '250, мм',
     boatDimensions: '4000, мм',
     dumpTruckFunction: 'Нет',
+    itemImgFileNameStart: '1L-00/1l-240-00',
+    itemImgFileNameWheel2R13: '1L-00/1l-240-01',
   },
   t2251501: {
     noWheel: 67900,

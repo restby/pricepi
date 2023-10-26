@@ -1,4 +1,5 @@
 import {items} from './priceData';
+import {changeImagesUrl} from './changeImagesUrl';
 
 const setItemData = () => {
 
@@ -230,6 +231,22 @@ const setItemData = () => {
             itemDumpTruckFunctionElement.textContent = items[itemDataValue][Object.keys(itemDumpTruckFunctionElement.dataset)[0]];
           }
 
+          if (document.querySelector('[data-item-img]')) {
+            const itemImg = document.querySelector('[data-item-img]');
+
+            let sourceElement = itemImg.querySelector('source');
+            let imgElement = itemImg.querySelector('img');
+            let altText = imgElement.getAttribute('alt');
+
+            sourceElement.setAttribute('srcset', `img/items/${items[itemDataValue].itemImgFileNameStart}.webp`);
+
+            imgElement.setAttribute('src', `img/items/${items[itemDataValue].itemImgFileNameStart}.jpg`);
+
+            let updatedAltText = altText.replace(imgElement.getAttribute('alt'), items[itemDataValue].itemTitle);
+            imgElement.setAttribute('alt', updatedAltText);
+          }
+
+          changeImagesUrl(items, itemDataValue);
         }
       });
     });
