@@ -54,6 +54,8 @@
 // }
 
 .uniaxial__link {
+  display: flex;
+  flex-wrap: nowrap;
   align-self: center;
   padding: 12px 20px;
   border-radius: 16px;
