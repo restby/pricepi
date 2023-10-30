@@ -2594,6 +2594,7 @@ button,
 }
 
 .slide__img-container {
+  position: relative;
   margin-bottom: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2744,8 +2745,8 @@ button,
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
@@ -2760,6 +2761,21 @@ button,
 }
 .slide__price svg {
   margin-left: 4px;
+}
+
+.slide__mark {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  padding: 10px;
+  border-radius: 6px;
+  color: #f6f5f5;
+}
+.slide__mark--in-stock {
+  background-color: #01aa52;
+}
+.slide__mark--to-order {
+  background-color: #6eacfa;
 }
 
 .slider-btns {
@@ -2879,6 +2895,11 @@ button,
 }
 
 .uniaxial__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -2986,6 +3007,11 @@ button,
 }
 
 .biaxial__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -3088,6 +3114,11 @@ button,
 }
 
 .boat__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
